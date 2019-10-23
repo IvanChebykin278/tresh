@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, body{
+	background-color: #87CEFA;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	min-width: 320px;
+}
+
+#form-outer {
+	display: inline-block;
+	background: linear-gradient(45deg, #DDA0DD, #5F9EA0, #DCDCDC);
+	border-radius: 10px;
+	width: 95%;
+}
+
+.rowTab {
+	text-align: center;
+}
+
+.labels {
+	display: inline-block;
+  	text-align: right;
+  	width: 40%;
+  	padding: 10px;
+  	vertical-align: top;
+}
+
+.inputs {
+	display: inline-block;
+  	text-align: left;
+  	width: 48%;
+  	position: relative;
+  	vertical-align: middle;
+}
+
+.input-field {
+	width: 300px;
+	height: 10px;
+	padding: 5px;
+	margin: 10px;
+	border-radius: 3px;
+
+}
+
+.dropdown {
+	margin: 10px;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.radio, .checkbox {
+	position: relative;
+	left: -35px;
+	top: -15px;
+	display: block;
+}
+
+.userRatings {
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+#comments {
+	resize: vertical;
+	height: 50px;
+}
+
+#submit {
+	display: inline-block;
+	width: 12%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #1E90FF;
+	color: white;
+	background-color: #1E90FF;
+}
+
+@media (max-width: 850px) {
+	.input-field {
+		display: inline-block;
+		width: 60%;
+	}
+}

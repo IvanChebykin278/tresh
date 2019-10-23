@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Lobster');
+
+body {
+	font-family: 'Open Sans Condensed', suns-serif;
+	min-width: 320px;
+	/*width: 100vw;*/
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+i {
+	margin-right: 10px;
+}
+
+/*header*/
+
+.bar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	justify-items: center;
+	align-items: center;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	height: 100%;
+}
+
+.btn {
+	border: 0;
+	border-radius: 15px;
+	height: auto;
+	padding: -10px 0 -10px 0;
+	text-transform: uppercase;
+	background-color: #800080;
+	color: white;
+	font-size: 20px;
+	width: 50%;
+	padding: 5px;
+}
+
+.btn:hover {
+	opacity: 0.7;
+	transition: opacity 0.5s;
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	background-color: white;
+	width: 90%;
+	margin-top: 50px;
+}
+
+.header-content {
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+}
+
+.line {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.line:hover {
+	background-color: #800080;
+	color: yellow;
+}
+
+.logo {
+	font-family: 'Lobster';
+}
+
+#nav-bar {
+	background-color: yellow;
+	height: 40px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.nav-link {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	height: 100%;
+}
+
+.nav-link:hover {
+	color: yellow;
+}
+
+span {
+	font-size: 25px;
+}
+
+.title {
+	color: #800080;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/*header*/
+
+/*main-content*/
+
+#main-content {
+	/*background: linear-gradient(45deg, #dafaa2, #a2ff00);*/
+	border: 0;
+}
+
+#description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.desc-content {
+	font-size: 20px;
+	margin: 10px 100px 10px 100px;
+}
+
+
+.service {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-img {
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 50%; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.service-link {
+	font-size: 25px;
+	color: #800080;
+}
+
+.service-link:hover {
+	opacity: 0.7;
+	transition: opacity 0.5s;
+}
+
+#services {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	margin-top: 50px;
+}
+
+.cont {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.cont-box {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-top: 20px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+.rowTab {
+	display: grid;
+	grid-template-columns: 100px auto;
+	grid-template-rows: auto;
+	align-items: center;
+}
+
+.labels {
+	margin-right: 10px;
+	text-align: right;
+}
+
+.input-field {
+	width: 200px;
+	height: 10px;
+	padding: 5px;
+	margin: 10px;
+	margin-right: 0;
+	border: 0;
+}
+
+#contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: yellow;
+	margin-top: 50px;
+}
+
+#comments {
+	resize: vertical;
+	height: 50px;
+}
+
+#submit {
+	width: 50%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 0;
+	color: white;
+	background-color: #800080;
+}
+
+#connection-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 0;
+}
+
+.conn {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+/*main-content*/
+
+/*footer*/
+
+footer {
+	width: 100%;
+	padding: 5px 0 30px 0;
+	text-align: center;
+	background-color: #800080;
+	color: white;
+}
+
+/*footer*/
+
+@media (max-width: 600px) {
+
+	#header {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.header-content {
+		display: none;
+	}
+
+	#services {
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: auto;
+	}
+
+	.service {
+		margin: 20px;
+	}
+
+	.desc-content {
+		margin: 10px 25px 10px 25px;
+	}
+
+	#contacts {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.conn, .cont, #connection-form {
+		align-items: center;
+	}
+
+}
